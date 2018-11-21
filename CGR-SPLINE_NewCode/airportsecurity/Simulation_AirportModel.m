@@ -773,7 +773,7 @@ function update_sum_variables_SelecteeLane(WaitingTime,RiskValue)
         %process observations m+1 through n
         Sumd_WaitingTime_SelecteeLane = Sumd_WaitingTime_SelecteeLane + queue_eobm_SelecteeLane(1);
         Sumy_WaitingTime_SelecteeLane = Sumy_WaitingTime_SelecteeLane + WaitingTime;
-        bsum = Sumy_WaitingTime_SelecteeLane - Sumd_WaitingTime_SelecteeLane;
+        bsum = Sumy_WaitingTime_SelecteeLane - Sumd_WaitingTime_SelecteeLane; %batch sum
         Sum_WaitingTime_SelecteeLane = Sum_WaitingTime_SelecteeLane + bsum;
         Sum2_WaitingTime_SelecteeLane = Sum2_WaitingTime_SelecteeLane + bsum*bsum;
         queue_eobm_SelecteeLane(1) = [];
@@ -827,7 +827,7 @@ function [ AvgWait,...
     global queue_eobm_SelecteeLane
     
     AvgWait = Sumy_WaitingTime/Num_CountedVisitors;
-   sumbm = Sum_WaitingTime/m_eobm;
+    sumbm = Sum_WaitingTime/m_eobm;
     sum2bm = (Sum2_WaitingTime/m_eobm) / m_eobm;
     VarAvgWait = ((sum2bm - AvgWait * (2*sumbm - (Num_CountedVisitors-m_eobm+1)*AvgWait))) / ...
                 (((Num_CountedVisitors-m_eobm+1.)*(Num_CountedVisitors-m_eobm))/m_eobm);
