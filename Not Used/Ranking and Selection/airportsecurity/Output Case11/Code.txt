@@ -1,0 +1,21 @@
+S1 = ;
+S2 = ;
+optimaltua = zeros(20,50);
+mk=1000;
+warm=1000;
+tautotal = 0;
+totaltwo =0;
+>> totalbias = 0;
+>>  for i=1:1000
+      
+    
+    [tau,AvgWaitingTime,Se_AvgWaitingTime,MinTau_Budget,flag2,mobs,iseed,...
+    SecurityLevel,Constraints] = GetOptimTau_Simulation_Bisection(S1,S2,[1112+i*4 2223+i*4 3334+i*4 4444+i*4],...
+    warm,mk,...
+    1e-3,1e-5);
+   
+optimaltau(ceil(i/50),(i-(ceil(i/50)-1)*50)) = tau;
+         
+end
+
+save(strcat('Case5.3_optimal_tau_mk = ',int2str(mk),'warmup = ',int2str(warm),'.mat'),'optimaltau')

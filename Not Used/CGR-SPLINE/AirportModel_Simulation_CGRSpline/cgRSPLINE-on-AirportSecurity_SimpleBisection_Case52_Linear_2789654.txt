@@ -1,0 +1,2 @@
+Initial solution is infeasible!!!
+All solutions in stack are infeasible!!!

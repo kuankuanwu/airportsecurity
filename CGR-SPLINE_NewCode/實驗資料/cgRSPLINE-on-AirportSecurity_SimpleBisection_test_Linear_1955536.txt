@@ -1,0 +1,14 @@
+
+
+
+
+======================== RESTART 1 ===========================
+
+Initial solution = [       6       8 ]
+
+
+br =  2020000, alphar =       0.0289
+==== RETROSPECTIVE ITERATION k = 1 ====
+mk = 1000, bk = 80
+===== BEGIN SPLINE =====
+Initial solution = [6 8 ]

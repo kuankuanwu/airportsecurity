@@ -1,0 +1,16 @@
+2018.10.19 by 吳泓?
+target:cgRSPLINE_v2
+將每次restart的initial seed改為繼承上一個restart的回傳值
+
+target:cRSPLINE_v2
+新增global變數 RefMatrix_Seed : 儲存該mk下已搜尋過的樣本點之最後回傳種子
+
+target:GetOptimTau_Simulation_Bisection
+判斷該樣本點是否已經求解過的過程中儲存回傳亂數種子
+
+
+2018.11.13 by 吳泓寬
+
+target:FindMinAvgWait.m
+處理當兩個x值接近但未超過tol
+其模擬出的waiting time卻相同導致程式錯誤的情形

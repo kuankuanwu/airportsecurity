@@ -1,0 +1,2 @@
+		Start Solving Tau: ((S1,S2), mk, iseed) = ((1, 4), 1500, (11111111, 22222222, 33333333))
+			 Ub Initial Guess = 0.017980 (Infeasible)

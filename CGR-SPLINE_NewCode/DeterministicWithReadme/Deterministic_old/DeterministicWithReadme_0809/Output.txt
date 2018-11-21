@@ -1,0 +1,2 @@
+==========================================================Global optimal point (S1,S2,tau) = (1,4,0.005204)
+The optimal security level = 9.790818e-01

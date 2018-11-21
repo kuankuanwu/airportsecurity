@@ -1,0 +1,25 @@
+Start RSPLINE: ((S1,S2), iseed, ncalls) = ((2, 6), (11111111, 22222222, 33333333), 0)
+	Call SPLINE: New Sample Path
+		Start Solving Tau: ((S1,S2), mk, iseed) = ((2, 6), 2000, (11111111, 22222222, 33333333))
+		End Solving Tau: INFEASIBLE
+Totalcalls = 4400
+Start RSPLINE: ((S1,S2), iseed, ncalls) = ((7, 2), (11111111, 22222222, 33333333), 0)
+	Call SPLINE: New Sample Path
+		Start Solving Tau: ((S1,S2), mk, iseed) = ((7, 2), 2000, (11111111, 22222222, 33333333))
+			 Ub Initial Guess = 0.108413 (Feasible)
+			 Use Lb Directly (Lb, Ub) = (0.039288,0.108413)
+			 (Lb, Ub) = (0.039288, 0.108413)
+			 (Lb, Ub) = (0.039288, 0.073850)
+			 (Lb, Ub) = (0.039288, 0.056569)
+			 (Lb, Ub)(Terminated) = (0.039288, 0.047929)
+		End Solving Tau: ((S1,S2), tau, WT, SE_WT, ncalls) = ((7, 2),0.047929,-0.660147,0.019398, 13200)
+		End Solving Tau: (SecurityLevel, Cost) = (0.928052, -1.032946)
+	Start SPLINE: ((S1,S2), tau, WT - EPSILON, SE_WT, mk, iseed, ncalls) = ((7, 2), 0.047929, -0.660147, 1.354655, 2000, (11111111, 22222222, 33333333), 13200)
+	Start SPLI: ((S1,S2), tau, WT - EPSILON, SE_WT, mk, iseed, ncalls) = ((7, 2), 0.047929, -0.660147, 1.354655, 2000, (11111111, 22222222, 33333333), 13200)
+		Start Solving Tau: ((S1,S2), mk, iseed) = ((7, 2), 2000, (11111111, 22222222, 33333333))
+		End Solving Tau (Skip): ((S1,S2), tau, WT, SE_WT, ncalls) = ((7, 2),0.047929,-0.660147,0.019398, 0)
+		End Solving Tau (Skip): (SecurityLevel, Cost) = (0.928052, -1.032946)
+		Start Solving Tau: ((S1,S2), mk, iseed) = ((7, 3), 2000, (11111111, 22222222, 33333333))
+		End Solving Tau: ((S1,S2), tau, WT, SE_WT, ncalls) = ((7, 3),0.100590,-5.016295,0.000121, 2200)
+		End Solving Tau: (SecurityLevel, Cost) = (0.841517, 0.000000)
+		Start Solving Tau: ((S1,S2), mk, iseed) = ((8, 3), 2000, (11111111, 22222222, 33333333))

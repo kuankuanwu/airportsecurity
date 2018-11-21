@@ -1,0 +1,14 @@
+for i = 1:45
+for j =1:30
+if OptimTau(i,j)==-1
+OptimTau(i,j) = 100;
+end
+end
+end
+>> for i = 2:44
+for j = 2:25
+if OptimTau(i,j)~= 100 && OptimTau(i,j) <= OptimTau(i+1,j) && OptimTau(i,j) <= OptimTau(i-1,j) && OptimTau(i,j) <= OptimTau(i,j+1) && OptimTau(i,j) <= OptimTau(i,j-1)
+disp([num2str(i), ',' num2str(j)])
+end
+end
+end

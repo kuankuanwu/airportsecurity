@@ -1,0 +1,9 @@
+Start RSPLINE: ((S1,S2), iseed, ncalls) = ((10, 3), (11111111, 22222222, 33333333), 0)
+	Call SPLINE: New Sample Path
+		Start Solving Tau: ((S1,S2), mk, iseed) = ((10, 3), 2000, (11111111, 22222222, 33333333))
+			 Ub Initial Guess = 0.426034 (Feasible)
+			 Use Lb Directly (Lb, Ub) = (0.106344,0.426034)
+			 (Lb, Ub) = (0.106344, 0.426034)
+			 (Lb, Ub) = (0.106344, 0.266189)
+			 (Lb, Ub) = (0.186267, 0.266189)
+			 (Lb, Ub) = (0.226228, 0.266189)

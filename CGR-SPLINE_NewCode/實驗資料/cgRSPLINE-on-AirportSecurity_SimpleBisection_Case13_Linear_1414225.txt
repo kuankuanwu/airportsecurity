@@ -1,0 +1,219 @@
+
+
+
+
+======================== RESTART 1 ===========================
+
+Initial solution = [       3      20 ]
+
+
+br =   505000, alphar =       0.0289
+==== RETROSPECTIVE ITERATION k = 1 ====
+mk = 200, bk = 80
+===== BEGIN SPLINE =====
+Initial solution = [3 20 ]
+	===== BEGIN SPLINE LOOP ===
+		=== bk = 1 ===
+			BEGIN SPLI ===
+				=== j = 0 ===
+				i/p seed to PERTURB = [11111111 22222222 33333333 44444444 ]				PERTURB begins ==== 
+					 ipseed = [11111111 ], u = 0.959657568019, xpert[1] = 3.137897270406
+					 ipseed = [2060848935 ], u = 0.964753203560, xpert[2] = 20.139425961068
+				==== PERTURB ends
+				Pertrubed value of xbest.x = [3.137897270406 20.139425961068 ]
+				PLI begins ===
+					p z w
+					1 1.000000000000000 0.860574038932100
+					3 0.137897270405665 0.001528690662235
+					2 0.139425961067900 0.137897270405665
+
+					i=1, ipseed = [11111111 22222222 33333333 44444444 ], mk=200
+					x0 = [3 20 ]
+					 secMeas = [-0.449307032027]
+					x0.fn = 0.000000000000, w = 0.860574038932, ghatold = 0.000000000000
+					opseed = [11111111 22222222 33333333 44444444 ], gbar=0.000000
+
+					i = 2, ipseed = [11111111 22222222 33333333 44444444 ], mk = 200
+					x0 = [3 21 ]
+					x0.fn = 0.041597020832, w = 0.001528690662, ghatold = 0.041597020832
+					opseed = [681017785 3073995262 236689459 44444444 ], gbar=0.000064, npoints=2
+					xbest.fn = 0.000000000000
+					xbest = [3 20 ]
+					secMeas = [-0.449307032027 ]
+
+
+					i = 3, ipseed = [11111111 22222222 33333333 44444444 ], mk = 200
+					x0 = [4 21 ]
+					x0.fn = 0.086599367299, w = 0.137897270406, ghatold = 0.086599367299
+					opseed = [681017785 3073995262 236689459 44444444 ], gbar=0.012005, npoints=3
+					xbest.fn = 0.000000000000
+					xbest = [3 20 ]
+					secMeas = [-0.449307032027 ]
+
+
+					gbar = 0.012005405347, npoints = 3
+				=== PLI ends
+				gbar = 0.012005405347
+				gamma = [0.045002346467 0.041597020832 ]
+				xbest.fn = 0.000000000000
+				xbest = [3 20 ]
+				secMeasbest=[-0.449307032027 ]
+				npoints=3
+				glength = 0.061282324773
+					== i = 0 ==
+					s = 1.100000000000, ix1 = [2 19 ]
+					ix1.fn = , flag2 = 1
+					secMeas=[ ]
+			==== SPLI ends
+			SPLI.x = [3 20 ]
+			SPLI.fn = 0.000000000000
+			opseed = [11111111 22222222 33333333 44444444 ]
+			secMeas = [-0.449307032027 ]
+
+			===== NE BEGINS =====
+			fn at center = 0.000000000000, center = [3 20 ]
+				xold[1] = 3, ixquad[1] = 3
+				xold[2] = 20, ixquad[2] = 20
+			ixquad.fn = 0.000000000000, ixquad = [3 20 ]
+			ixquad.secMeas = [-0.449307032027 ]
+			opseed = [11111111 22222222 33333333 44444444 ]
+			==== NE ends
+			NE_best.x = [3 20 ]
+			NE.fn = 0.000000000000
+			opseed = [11111111 22222222 33333333 44444444 ]
+			secMeas = [-0.449307032027 ]
+
+
+		SPLINE ncalls = prev ncalls + SPLI calls + NE calls = 4800
+
+		SPLINE ended at bk=1 since NE and SPLI returned the same solution
+
+
+SPLINE returned x with phat=1.000000000000 when alphar=0.028875000000
+
+===== SPLINE ENDED =====
+
+ncalls so far = 4800, xbest.ghat =  0.000000000000, xbest = [3 20 ]
+output iseed=[11111111 22222222 33333333 44444444 ]
+secMeas = [-0.449307032027 ]
+secMeasCov = [0.000000461289 ]
+3	
+20	
+==== RETROSPECTIVE ITERATION k = 2 ====
+mk = 600, bk = 800
+===== BEGIN SPLINE =====
+Initial solution = [3 20 ]
+	===== BEGIN SPLINE LOOP ===
+		=== bk = 1 ===
+			BEGIN SPLI ===
+				=== j = 0 ===
+				i/p seed to PERTURB = [11111111 22222222 33333333 44444444 ]				PERTURB begins ==== 
+					 ipseed = [11111111 ], u = 0.959657568019, xpert[1] = 3.137897270406
+					 ipseed = [2060848935 ], u = 0.964753203560, xpert[2] = 20.139425961068
+				==== PERTURB ends
+				Pertrubed value of xbest.x = [3.137897270406 20.139425961068 ]
+				PLI begins ===
+					p z w
+					1 1.000000000000000 0.860574038932100
+					3 0.137897270405665 0.001528690662235
+					2 0.139425961067900 0.137897270405665
+
+					i=1, ipseed = [11111111 22222222 33333333 44444444 ], mk=600
+					x0 = [3 20 ]
+					 secMeas = [-0.447284028343]
+					x0.fn = 0.000000000000, w = 0.860574038932, ghatold = 0.000000000000
+					opseed = [11111111 22222222 33333333 44444444 ], gbar=0.000000
+
+					i = 2, ipseed = [11111111 22222222 33333333 44444444 ], mk = 600
+					x0 = [3 21 ]
+					x0.fn = 0.041597020832, w = 0.001528690662, ghatold = 0.041597020832
+					opseed = [927606158 1759518016 3892204023 44444444 ], gbar=0.000064, npoints=2
+					xbest.fn = 0.000000000000
+					xbest = [3 20 ]
+					secMeas = [-0.447284028343 ]
+
+
+					i = 3, ipseed = [11111111 22222222 33333333 44444444 ], mk = 600
+					x0 = [4 21 ]
+					x0.fn = 0.086599367299, w = 0.137897270406, ghatold = 0.086599367299
+					opseed = [927606158 1759518016 3892204023 44444444 ], gbar=0.012005, npoints=3
+					xbest.fn = 0.000000000000
+					xbest = [3 20 ]
+					secMeas = [-0.447284028343 ]
+
+
+					gbar = 0.012005405347, npoints = 3
+				=== PLI ends
+				gbar = 0.012005405347
+				gamma = [0.045002346467 0.041597020832 ]
+				xbest.fn = 0.000000000000
+				xbest = [3 20 ]
+				secMeasbest=[-0.447284028343 ]
+				npoints=3
+				glength = 0.061282324773
+					== i = 0 ==
+					s = 1.100000000000, ix1 = [2 19 ]
+					ix1.fn = , flag2 = 1
+					secMeas=[ ]
+			==== SPLI ends
+			SPLI.x = [3 20 ]
+			SPLI.fn = 0.000000000000
+			opseed = [11111111 22222222 33333333 44444444 ]
+			secMeas = [-0.447284028343 ]
+
+			===== NE BEGINS =====
+			fn at center = 0.000000000000, center = [3 20 ]
+				xold[1] = 3, ixquad[1] = 3
+				xold[2] = 20, ixquad[2] = 20
+			ixquad.fn = 0.000000000000, ixquad = [3 20 ]
+			ixquad.secMeas = [-0.447284028343 ]
+			opseed = [11111111 22222222 33333333 44444444 ]
+			==== NE ends
+			NE_best.x = [3 20 ]
+			NE.fn = 0.000000000000
+			opseed = [11111111 22222222 33333333 44444444 ]
+			secMeas = [-0.447284028343 ]
+
+
+		SPLINE ncalls = prev ncalls + SPLI calls + NE calls = 6400
+
+		SPLINE ended at bk=1 since NE and SPLI returned the same solution
+
+
+SPLINE returned x with phat=1.000000000000 when alphar=0.028875000000
+
+===== SPLINE ENDED =====
+
+ncalls so far = 11200, xbest.ghat =  0.000000000000, xbest = [3 20 ]
+output iseed=[11111111 22222222 33333333 44444444 ]
+secMeas = [-0.447284028343 ]
+secMeasCov = [0.000006018708 ]
+3	
+20	
+==== RETROSPECTIVE ITERATION k = 3 ====
+mk = 1800, bk = 8000
+===== BEGIN SPLINE =====
+Initial solution = [3 20 ]
+	===== BEGIN SPLINE LOOP ===
+		=== bk = 1 ===
+			BEGIN SPLI ===
+				=== j = 0 ===
+				i/p seed to PERTURB = [11111111 22222222 33333333 44444444 ]				PERTURB begins ==== 
+					 ipseed = [11111111 ], u = 0.959657568019, xpert[1] = 3.137897270406
+					 ipseed = [2060848935 ], u = 0.964753203560, xpert[2] = 20.139425961068
+				==== PERTURB ends
+				Pertrubed value of xbest.x = [3.137897270406 20.139425961068 ]
+				PLI begins ===
+					p z w
+					1 1.000000000000000 0.860574038932100
+					3 0.137897270405665 0.001528690662235
+					2 0.139425961067900 0.137897270405665
+
+					i=1, ipseed = [11111111 22222222 33333333 44444444 ], mk=1800
+					x0 = [3 20 ]
+					 secMeas = [-0.448255431769]
+					x0.fn = 0.000000000000, w = 0.860574038932, ghatold = 0.000000000000
+					opseed = [11111111 22222222 33333333 44444444 ], gbar=0.000000
+
+					i = 2, ipseed = [11111111 22222222 33333333 44444444 ], mk = 1800
+					x0 = [3 21 ]
