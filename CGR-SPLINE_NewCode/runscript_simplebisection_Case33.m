@@ -180,7 +180,7 @@ for trial = 2:2
 log_test_name =['Debug_log_SimpleBisection_Case33_smallbase2_RandomInitial_trial',int2str(trial),'.txt']; 
 log_test=fopen(log_test_name, 'w'); 
 problemname      = 'AirportSecurity';
-problemparam     = [0 2 4 1 200 0.001 0.005 0];
+problemparam     = [0 2 4 1 200 0.001 0.01 0];
                              % [binary dim nprimMeas nsecMeas ...]
                              % see ThreeStageFlow.m for details
 problemseedparam = [4, 0] ;  % nprobseeds = 3

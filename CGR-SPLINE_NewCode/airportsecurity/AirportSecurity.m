@@ -56,7 +56,7 @@ if x(2) > Upper || x(2) < Lower
 end
 
 Delta0 = param(6);
-ErrorTol = param(7)/(m^(1/2));
+ErrorTol = param(7)/(2^(1/2)); %% 12/3
 
 
 disp(x)
