@@ -177,10 +177,10 @@ global TSFtrueFlag
 TSFtrueFlag = 0;
 
 for trial = 2:2
-log_test_name =['Debug_log_SimpleBisection_Case33_smallbase2_RandomInitial_trial',int2str(trial),'.txt']; 
+log_test_name =['Debug_log_SimpleBisection_case33_0106_trial',int2str(trial),'.txt']; 
 log_test=fopen(log_test_name, 'w'); 
 problemname      = 'AirportSecurity';
-problemparam     = [0 2 4 1 200 0.001 0.01 0];
+problemparam     = [0 2 4 1 200 0.001 0.5 0];
                              % [binary dim nprimMeas nsecMeas ...]
                              % see ThreeStageFlow.m for details
 problemseedparam = [4, 0] ;  % nprobseeds = 3
@@ -197,7 +197,7 @@ xmax             = [ceil((Budget-Beta1)/c1) ceil(Budget/c2)];
 
 solvername       = 'cgRSPLINE_v2';
 solverparam      = [1 100 1000 3.5 0.4 8 10 .002 0.1 1 m0 geomc ...
-                    500000 1.1 0.05 0.65 1 0]; 
+                    1000000 1.05 0.5 0.65 1 0]; 
 %solverparam      = [1 50 1000 3.5 0.4 8 10 .002 0.1 1 8 1.1 ...
 %                    500 1.5 0.95 0.65];  
                              % [numfinalsols numrestarts kmax q delta ... ]
@@ -206,7 +206,7 @@ solverseedparam  = [1, 0];   % nsolvseeds = 1
                              % sstreamindex = 0 implies cgRSPLINE.m 
                              % requires actual seeds values
 solverseed       = 872914+541311*trial;    %48906,10000,20000
-logfilename      = strcat('cgRSPLINE-on-AirportSecurity_SimpleBisection_Case33_new_Linear_',int2str(solverseed),'small_base2');  
+logfilename      = strcat('cgRSPLINE-case33_0106_',int2str(solverseed));  
                              % log file base name 
 budget           = 100000000;    % 'numfinalsols'=1
 

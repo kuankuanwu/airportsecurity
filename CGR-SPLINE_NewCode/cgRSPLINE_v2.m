@@ -310,7 +310,7 @@ while(1)   % while work done <= budg
             if Acurr(r).mk>Ainc(r).mk % Update the incumbent
                 
                 fprintf(logfid, '\nCompare current solution with incumbent: Acurr(%d).mk=%d > Ainc(%d).mk=%d\n',r,Acurr(r).mk,r,Ainc(r).mk);
-                fprintf(logfid, 'Call ORACLE at Ainc(%d).x with sample size %d and input seed Ainc(%d).lastRAipseed=%d,%d,%d,%d\n',r,Acurr(r).mk,r,Ainc(r).lastRAipseed);
+                fprintf(logfid, 'Call ORACLE at Ainc(%d).x with sample size %d and input seed Ainc(%d).lastRAipseed=%d,%d,%d,%d\n',r,Acurr(r).mk,r,Ainc(r).lastRAipseed(1),Ainc(r).lastRAipseed(2),Ainc(r).lastRAipseed(3),Ainc(r).lastRAipseed(4));
                     
                 % Call Oracle at Ainc(r).x with sample size Acurr(r).mk and
                 % input seed = Ainc(r).lastRAipseed (not maintaining CRN)
@@ -430,8 +430,10 @@ while(1)   % while work done <= budg
             
         end
         
-    end  
+    end
     
+    save(strcat(logfilename, '_vars.mat'), 'Acurr', 'Ainc', 'Abest', 'Awork', 'Test_initial_point','total_sol','cal_tau');
+    %%delete line below
     % Print Final Report
     if strcmp(Abest(r).FO, '-') == 0 % R-SPLINE found a sample path feasible solution
         % Print Report
